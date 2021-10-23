@@ -1,0 +1,104 @@
+
+body
+{
+	background-color: grey;
+}
+
+div.Titulo
+{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	margin: 20px 25%;;
+	text-align: center;
+	color: Gray;
+	background-color: Gainsboro;
+	font-weight: bold;
+	font-size: 26px;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: DarkSlateGray;
+}
+
+div.TipoReloj
+{
+	width: 15%;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 80% 20px 5%;
+	text-align: center;
+	color: DarkBlue;
+	background-color: cyan;
+	font-weight: bold;
+	font-size: 20px;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: blue;
+}
+
+div.Reloj
+{
+	display: flex;
+	width: 75%;
+	margin: 20px 20% 20px 5%;
+}
+
+div.Pantalla
+{
+	width: 20%;
+	margin: 0px 10px 0px 0px;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: Chartreuse;
+	color: Chartreuse;
+	background-color: black;
+	font-weight: bold;
+	font-size: 26px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+div.Opcion
+{
+	flex: 1;
+	margin: 0px 10px 0px 25px;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: GoldenRod;
+	background-color: LemonChiffon;
+	color: GoldenRod;
+	font-weight: bold;
+	font-size: 19px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+div.Descripcion
+{
+	width: 75%;
+	height: 50px;
+	line-height: 50px;
+	margin: 40px 20% 40px 5%;
+	text-align: center;
+	color: MediumBlue;
+	background-color: LightSalmon;
+	font-weight: bold;
+	font-size: 22px;
+	border-width: 5 px;
+	border-style: solid;
+	border-color: FireBrick;
+}
+
+div.CambiaFondoTitulo
+{
+	color: white;
+	background-color: black;
+}
+
+div.CambiaFondo
+{
+	color: Aqua;
+	background-color: Blue;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang = 'es'>
+
+<head>
+
+	<title> Juego </title>
+	
+	<meta charset = 'utf-8'>
+	
+	<link rel = 'stylesheet' href = 'CSS/Estilos_Hundir_Flota.css' />
+	
+	<script src="JS/Funciones_Hundir_Flota.js"></script>
+	
+	<script>
+	
+		window.onload = function()
+		{
+			init();
+		}
+		
+	</script>
+	
+</head>
+
+<body>
+	
+	<div class = 'Titulo'> Hundir la Flota </div>
+	
+	<div class = 'Caja'>
+	
+		<div class = 'Caja1'>
+			<div class = 'Caja1_1'>
+				<div class = 'Dimension'> Número de Filas: </div>
+				<div contenteditable = "true" class = 'DatoDimension'> x </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Dimension'> Número de Columnas: </div>
+				<div contenteditable = "true" class = 'DatoDimension'> x </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Crear'> Crear </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Reloj'> 00:00:00 </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Situar_Flota_Iniciar'> Colocar la Flota </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Situar_Flota_Iniciar'> Iniciar Batalla </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Situar_Flota_Iniciar'> Imagen por Satélite </div>
+			</div>
+			<div class = 'Caja1_1'>
+				<div class = 'Descripcion'> Descripcion </div>
+			</div>
+		</div>
+		
+		<div class = 'Caja2'>
+			<div class = 'Titulo_Tablero'>
+				<div class = 'Titulo_Tablero_2'>Flota de la Máquina</div>
+				<div class = 'Titulo_Tablero_2'>Mapa Táctico de la Máquina</div>
+			</div>
+			<div class = 'Caja2_1'>
+				<div class = 'Tablero'></div>
+				<div class = 'Tablero'></div>
+			</div>
+			<div class = 'Titulo_Tablero'>
+				<div class = 'Titulo_Tablero_2'>Flota del Jugador</div>
+				<div class = 'Titulo_Tablero_2'>Mapa Táctico del Jugador</div>
+			</div>
+			<div class = 'Caja2_1'>
+				<div class = 'Tablero'></div>
+				<div class = 'Tablero'></div>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>

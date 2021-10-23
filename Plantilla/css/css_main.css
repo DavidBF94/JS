@@ -1,0 +1,403 @@
+
+/* Estructura - Grid */
+
+html, body
+{
+    height: 100%;
+    margin: 0px;
+}
+
+.main
+{
+    height: 100%;
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: [y0] 1fr [y2] 4fr [y6];
+}
+
+.main_cab
+{
+    grid-row: y0/y2;
+    display: grid;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2];
+}
+
+.main_cab_1
+{
+    grid-row: y0/y1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_cab_2
+{
+    grid-row: y1/y2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main_cont
+{
+    grid-row: y2/y6;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 2fr [x3];
+}
+
+.main_cont_1
+{
+    grid-column: x0/x1;
+    display: grid;
+    grid-template-rows: [y2] 2fr [y3] 1fr [y4] 1fr [y6];
+}
+
+.main_cont_1_1
+{
+    grid-row: y2/y3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_cont_1_2
+{
+    grid-row: y3/y4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main_cont_1_3
+{
+    grid-row: y4/y6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main_cont_2
+{
+    grid-column: x1/x3;
+    display: grid;
+    grid-template-rows: [y2] 5fr [y5] 2fr [y6];
+}
+
+.main_cont_2_1
+{
+    grid-row: y2/y5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_cont_2_2
+{
+    grid-row: y5/y6;
+    display: grid;
+    grid-template-columns: [x1] 5fr [x2] 1fr [x3];
+}
+
+.main_cont_2_2_1
+{
+    grid-column: x1/x2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main_cont_2_2_2
+{
+    grid-column: x2/x3;
+}
+
+/* Estructura < Grid */
+
+.main_cab_1_1
+{
+    margin: 20px;
+    font-family: narkisim;
+    font-size: 1.4rem;
+}
+
+.main_cab_2_1
+{
+    width: 10%;
+    margin: 30px;
+    font-family: narkisim;
+    font-size: 1.4rem;
+    display: flex;
+    height: 100%;
+}
+
+.main_cab_2_1 div
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_cab_2_1_icono
+{
+    cursor: pointer;
+}
+
+.main_cab_2_1 div img
+{
+    width: 50%;
+    height: 100%;
+}
+
+.main_cont_1_1_1
+{
+    font-family: narkisim;
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.main_cont_1_2_1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_cont_1_2_1 span
+{
+    padding: 10px;
+    font-family: narkisim;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.caja_relaciones
+{
+    margin: 0px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: narkisim;
+    font-size: 1.1rem;
+}
+
+.caja_relaciones a:visited
+{
+	color: blue;
+}
+
+.fondo_caja_relaciones
+{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.main_cont_1_3_1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_cont_1_3_1 span
+{
+    padding: 10px;
+    font-family: narkisim;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.caja_enlaces
+{
+    margin: 0px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: narkisim;
+    font-size: 1.1rem;
+}
+
+.caja_enlaces a:visited
+{
+	color: blue;
+}
+
+.fondo_caja_enlaces
+{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.main_cont_2_1_1
+{
+    padding: 10px;
+    border: 2px solid blue;
+    width: 90%;
+    height: 90%;
+    font-family: narkisim;
+    font-size: 1.9rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.negrita
+{
+    font-weight: bold;
+}
+
+.imagenes
+{
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.simbolo
+{
+    height: 100%;
+    width: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: narkisim;
+    font-size: 1.6rem;
+}
+
+.contenedor_imagen
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor_imagen img
+{
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.paginacion
+{
+    width: 76%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: narkisim;
+    font-size: 1.6rem;
+}
+
+/* Estructura Overlay */
+
+.oculto
+{
+    display: none !important;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: deepskyblue;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay__caja_inicio
+{
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.overlay__caja_inicio__titulo
+{
+    width: 100%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-family: narkisim;
+}
+
+.overlay__caja_inicio input[ name = 'correo'], .overlay__caja_inicio input[ name = 'contraseña']
+{
+    height: 14%;
+    width: 60%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.overlay__caja_inicio input[ type = "button" ] 
+{
+	box-shadow: inset 0px 1px 0px 0px #efdcfb;
+	background: linear-gradient(to bottom, DodgerBlue 5%, DeepSkyBlue 100%);
+	background-color: DodgerBlue;
+	border-radius: 6px;
+	border: 1px solid Azure;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #9752cc;
+}
+
+.overlay__caja_inicio input[ type="button" ]:hover 
+{
+	background: linear-gradient(to bottom, DeepSkyBlue 5%, DodgerBlue 100%);
+	background-color: #bc80ea;
+    cursor: pointer;
+}
+
+.overlay__caja_inicio input[ type="button" ]:active 
+{
+	position: relative;
+	top: 1px;
+}
+
+.overlay__caja_inicio__validacion
+{
+    font-family: narkisim;
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+}

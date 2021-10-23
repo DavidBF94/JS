@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>arbolito</title>
+		<style>	
+			
+			body 
+			{
+				font-family: monospace; 
+				background-color: black;
+			}
+			
+			span.negrita
+			{
+				font-weight : bold;
+			}
+			
+			span.rojo
+			{	
+				animation: animacion1 0.3s infinite;
+			}
+			
+			span.verde
+			{
+				animation: animacion2 0.3s infinite;
+			}
+			
+			span.azul
+			{
+				animation: animacion3 0.3s infinite;
+			}
+			
+			span.amarillo
+			{
+				animation: animacion4 0.3s infinite;
+			}
+			
+			@keyframes animacion1 
+			{
+			  from {color: red;}
+			  to {color: blue;}
+			}
+			
+			@keyframes animacion2 
+			{
+			  from {color: green;}
+			  to {color: yellow;}
+			}
+			
+			@keyframes animacion3 
+			{
+			  from {color: blue;}
+			  to {color: red;}
+			}
+			
+			@keyframes animacion4
+			{
+			  from {color: yellow;}
+			  to {color: green;}
+			}
+			
+		</style>
+		<script>
+			
+
+			bases = [ 9 , 13 , 15 , 19 , 23 , 37 ];
+			porcentajes = [ 100 , 100 , 100 , 100 , 100 , 100 ];
+			alturaTronco = 6;
+			porcentajeBaseTronco = 20;
+			porcentajeLucesTronco = 100;
+			
+			baseMayor = bases [ 0 ];
+			for ( h = 0 ; h < bases.length ; h++ )
+			{
+				if ( bases [ h ] > baseMayor )
+				{
+					baseMayor = bases [ h ];
+				}
+			}
+			
+			centro = Math.floor( baseMayor )/2;
+			baseTronco1 = Math.round( porcentajeBaseTronco*baseMayor/100 );
+			baseTronco2 = Math.round( ( baseTronco1 - 1 )/2 );
+			if ( baseTronco2%2 !== 0 )
+			{
+				baseTronco2 = baseTronco2 - 1;
+			}
+			
+			for ( p = 0 ; p < bases.length ; p++ )
+			{
+				base = bases [ p ];
+				altura =  Math.floor(base/2) + base%2;
+				distancia = ( ( baseMayor - 1 )/2 ) - ( ( base - 1 )/2 );
+				porcentaje = porcentajes [ p ];
+				contador1 = 0;
+				posicionesAsteriscos = [];
+				for ( i = 0 ; i < altura ; i++ )
+				{
+					document.write ( "<br>" );
+					
+					for ( t = 0 ; t < distancia ; t++ )
+					{
+						document.write ( " &nbsp " );
+					}
+					
+					contador2 = 0;
+					for ( k = (((base - 1 )/2) - contador1) ; k < (((base - 1 )/2) + contador1 + 1) ; k ++ )
+					{
+						posicionesAsteriscos[ contador2 ] = k ;
+						contador2 ++;
+					}
+					for ( j = 0 ; j < base ; j++ )
+					{
+						for ( m = 0 ; m < posicionesAsteriscos.length ; m++ )
+						{
+							if ( j === posicionesAsteriscos [ m ] )
+							{
+								bValor = true;
+								break;
+							}
+							else
+							{
+								bValor = false;
+							}
+						}
+						if ( bValor )
+						{	
+							nAleatorio1 = Math.floor(Math.random() * 101);
+							if ( nAleatorio1 >= porcentaje )
+							{
+								document.write ( " * " );
+							}
+							else
+							{
+								nAleatorio2 = Math.floor(Math.random() * 4);
+								if ( nAleatorio2 === 0 )
+								{
+									document.write ( "<span class = rojo> * </span>" ) ;
+								}
+								else if ( nAleatorio2 === 1 )
+								{
+									document.write ( "<span class = azul> * </span>" ) ;
+								}
+								else if ( nAleatorio2 === 2 )
+								{
+									document.write ( "<span class = verde> * </span>" ) ;
+								}
+								else if ( nAleatorio2 === 3 )
+								{
+									document.write ( "<span class = amarillo> * </span>" ) ;
+								}
+							}
+						}
+						else 
+						{
+							document.write ( " &nbsp " );
+						}
+					}
+					contador1 ++;
+				}
+			}
+			
+			document.write( "<br>" );
+			for ( i = 0; i < alturaTronco ; i++ ) 
+			{
+				contador = 0;
+				for ( j = 0; j < ( centro + baseTronco2 ) ; j++ )
+				{
+					if( j < ( centro - baseTronco2 - 1) )
+					{
+						document.write( " &nbsp ");
+					}
+					else
+					{
+						contador++;
+						nAleatorio1 = Math.floor(Math.random() * 101);
+						if ( nAleatorio1 >= porcentajeLucesTronco )
+						{
+							document.write ( " | " );
+						}
+						else
+						{
+							nAleatorio2 = Math.floor(Math.random() * 4);
+							if ( nAleatorio2 === 0 )
+							{
+								document.write ( "<span class = rojo> | </span>" ) ;
+							}
+							else if ( nAleatorio2 === 1 )
+							{
+								document.write ( "<span class = azul> | </span>" ) ;
+							}
+							else if ( nAleatorio2 === 2 )
+							{
+								document.write ( "<span class = verde> | </span>" ) ;
+							}
+							else if ( nAleatorio2 === 3 )
+							{
+								document.write ( "<span class = amarillo> | </span>" ) ;
+							}
+						}
+						if ( contador === ( baseTronco2*2 + 1 ) )
+						{
+							document.write( "<br>" );
+						}
+					}
+				}
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>

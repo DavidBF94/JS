@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <title>main</title>
+	<meta charset = 'utf-8'>
+	<link rel = 'stylesheet' href = 'CSS/css_main.css' />
+	<script src="js/js_main.js"></script>
+
+	<script>
+		window.onload = function()
+		{
+			init();
+		}
+	</script>
+
+</head>
+<body>
+    <div class = 'main'>
+		<div class = 'main_cab'>
+			<div class = 'main_cab_1'>
+				<div class = 'main_cab_1_1'>
+					<span>SQL <- Bases de Datos Relacionales <- Bases de Datos</span>
+				</div>
+			</div>
+			<div class = 'main_cab_2'>
+				<div class = 'main_cab_2_1'>
+					<div class = 'main_cab_2_1_nombre'>
+						<span>Hola Fer.</span>
+					</div>
+					<div class = 'main_cab_2_1_icono'>
+						<img src = "img/icono.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = 'main_cont'>
+			<div class = 'main_cont_1'>
+				<div class = 'main_cont_1_1'>
+					<div class = 'main_cont_1_1_1'>
+						<span>Procedimiento</span>
+						<span>Almacenado</span>
+					</div>
+				</div>
+				<div class = 'main_cont_1_2'>
+					<div class = 'main_cont_1_2_1'>
+						<span class = 'relacionado'>Relacionado con:</span>
+						<div class = 'caja_relaciones'>
+							<a href='main.html'>SQL</a>
+							<a href='main.html'>PL/SQL</a>
+							<a href='main.html'>PL/pgSQL</a>
+							<div class = 'fondo_caja_relaciones'>
+								<a href='main.html'>Ver Todos</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = 'main_cont_1_3'>
+					<div class = 'main_cont_1_3_1'>
+						<span class = 'enlaces'>Enlaces de Interés:</span>
+						<div class = 'caja_enlaces'>
+							<a href='main.html'>www.xxxx.com</a>
+							<a href='main.html'>www.yyyy.com</a>
+							<div class = 'fondo_caja_enlaces'>
+								<a href='main.html'>Ver Todos</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'main_cont_2'>
+				<div class = 'main_cont_2_1'>
+					<div class = 'main_cont_2_1_1'>
+						<p>
+							Un <span class = 'negrita'>procedimiento almacenado</span> (stored procedure en inglés) es un programa (o procedimiento) almacenado físicamente en una base de datos.
+							Su implementación varía de un gestor de bases de datos a otro. La ventaja de un procedimiento almacenado es que al ser ejecutado, en respuesta a una petición de usuario, es ejecutado directamente en el motor de bases de datos, el cual usualmente corre en un servidor separado.
+							Como tal, posee acceso directo a los datos que necesita manipular y sólo necesita enviar sus resultados de regreso al usuario, deshaciéndose de la sobrecarga resultante de comunicar grandes cantidades de datos salientes y entrantes.
+						</p>
+						<p>
+							Los procedimientos pueden ser ventajosos: Cuando una base de datos es manipulada desde muchos programas externos.
+							Al incluir la lógica de la aplicación en la base de datos utilizando procedimientos almacenados, la necesidad de embeber la misma lógica en todos los programas que acceden a los datos es reducida.
+							Esto puede simplificar la creación y, particularmente, el mantenimiento de los programas involucrados.
+						</p>
+					</div>
+				</div>
+				<div class = 'main_cont_2_2'>
+					<div class = 'main_cont_2_2_1'>
+						<div class = 'imagenes'>
+							<div class = 'simbolo'>
+								<span><</span>
+							</div>
+							<div class = 'contenedor_imagen'>
+								<img src = "img/imagen.jpg"/>
+							</div>
+							<div class = 'contenedor_imagen'>
+								<img src = "img/imagen.jpg"/>
+							</div>
+							<div class = 'contenedor_imagen'>
+								<img src = "img/imagen.jpg"/>
+							</div>
+							<div class = 'contenedor_imagen'>
+								<img src = "img/imagen.jpg"/>
+							</div>
+							<div class = 'simbolo'>
+								<span>></span>
+							</div>
+						</div>
+					</div>
+					<div class = 'main_cont_2_2_2'>
+						<div class = 'paginacion'>
+							<span> < x > </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = 'oculto overlay'>
+		<div class = 'overlay__caja_inicio'>
+			<div class = 'overlay__caja_inicio__titulo'>
+				<h2>Inicio Sesion</h2>
+			</div>
+			<input type = 'text' name = 'correo' placeholder = 'email'>
+			<input type = 'text' name = 'contraseña' placeholder = 'contraseña'>
+			<div class = 'overlay__caja_inicio__validacion'></div>
+			<input type = 'button' name = 'boton' value = 'Entrar'>
+		</div>
+	</div>
+</body>
+</html>

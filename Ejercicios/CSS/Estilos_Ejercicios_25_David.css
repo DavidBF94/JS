@@ -1,0 +1,82 @@
+
+body
+{
+	background-color: cyan;
+}
+
+div.Titulo
+{
+	text-align: center;
+	color: white;
+	background-color: black;
+	width: 90%;
+	margin: 5px 5%;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: red;
+}
+
+div.Acciones
+{
+	display: flex;
+	width: 90%;
+	margin: 0% 5%;
+}
+
+div.Accion
+{
+	flex: 1;
+	font-weight: bold;
+	text-align: center;
+	color: yellow;
+	background-color: grey;
+	border-style: solid;
+	border-color: red;
+	border-width: 5px;
+}
+
+div.Numero
+{
+	font-weight: bold;
+	width: 90%;
+	height: 200px;
+	margin: 5px 5%;
+	text-align: center;
+	vertical-aling: middle;
+	line-height: 200px;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: red;
+	background-color: white;
+}
+
+div.Descripcion
+{
+	font-weight: bold;
+	text-align: center;
+	vertical-aling: middle;
+	line-height: 100px;
+	color: black;
+	background-color: red;
+	width: 90%;
+	height: 100px;
+	margin: 5px 5%;
+	border-width: 10 px;
+	border-style: solid;
+	border-color: black;
+}
+
+div.CambiaFondo
+{
+	background-color: black;
+}
+
+div.Par
+{
+	color: blue;
+}
+
+div.Impar
+{
+	color: red;
+}
